@@ -1,8 +1,8 @@
 import java.util.*;
 
-class Sumofdigit {
+class SumOfdigit {
 
-    public static int sumdigit(int num) {
+    public static int sumDigit(int num) {
         int sum = 0, r;
         while (num > 0) {
             r = num % 10;
@@ -18,15 +18,15 @@ class Sumofdigit {
         int num = s.nextInt();
         int tot = 0, tot1 = 0, tot2 = 0;
         if (num > 10) {
-            tot = sumdigit(num);
+            tot = sumDigit(num);
             System.out.print("sum:" + tot + "\n");
         }
         if (tot > 10) {
-            tot1 = sumdigit(tot);
+            tot1 = sumDigit(tot);
             System.out.println(tot1);
         }
         if (tot1 > 10) {
-            tot2 = sumdigit(tot1);
+            tot2 = sumDigit(tot1);
             System.out.println(tot2);
         }
     }
